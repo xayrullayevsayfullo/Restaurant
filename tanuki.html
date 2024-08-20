@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanuki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+        
+        body {
+          font-family: 'Roboto', sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+          max-width: 1440px;
+          width: 100%;
+          margin: 0 auto;
+        }
+    </style>
+    <header class="pt-4">
+        <nav class="container flex sm:flex-row flex-col items-center justify-between space-x-[100px] pb-10">
+            <img class="sm:pb-0 pb-6" src="assets/svg/header__logo.svg" alt="header__logo">
+            <div class="md:flex hidden border-2 w-full py-2 px-3"><i class="fa-solid fa-house"></i><input class="pl-2 outline-none" type="text" placeholder="Адрес доставки"></div>
+            <div class="space-x-2 flex">
+                <button class="flex items-center bg-blue-400 outline-none text-white px-4 py-2 hover:bg-blue-600" type="button"><i class="pr-2 fa-regular fa-user"></i><span>Войти</span></button>
+                <button class="flex items-center px-4 py-[7px] border-2 outline-none hover:bg-slate-200" type="button"><i class="pr-2 fa-solid fa-cart-shopping"></i><span>Корзина</span></button>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="flex sm:flex-row flex-col items-center space-x-4 md:justify-start justify-center"><h3 class="text-4xl font-bold pb-6 ">Тануки</h3><span class="pb-6"><i class="pr-4 text-amber-400 fa-solid fa-star">4.5</i>    От 900 ₽ * Пицца </span></div>
+        <div class="flex items-center justify-center">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
+                <div class="shadow-lg hover:scale-105 transition">
+                    <div><img class="flex md:flex-start flex-center" src="assets/images/tanuki1.png" alt="tanuki1"></div>
+                    <div class="py-4 px-6">
+                        <h3 class="text-2xl py-2">Ролл угорь стандарт</h3>
+                        <p>Рис, угорь, соус унаги, огурец, майонез, кунжут, водоросли нори.</p>
+                        <div class="py-4">
+                            <button class="bg-blue-400 py-2 px-4 text-white outline-none hover:bg-blue-600" type="button">В корзину <i class=" pl-2 fa-solid fa-cart-shopping"></i></button>
+                            <span class="font-bold text-xl pl-4">250 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg hover:scale-105 transition">
+                    <div><img src="assets/images/tanuki2.png" alt="tanuki2"></div>
+                    <div class="py-4 px-6">
+                        <h3 class="text-2xl py-2">Калифорния лосось стандарт</h3>
+                        <p>Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</p>
+                        <div class="py-4">
+                            <button class="bg-blue-400 py-2 px-4 text-white outline-none hover:bg-blue-600" type="button">В корзину <i class=" pl-2 fa-solid fa-cart-shopping"></i></button>
+                            <span class="font-bold text-xl pl-4">395 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg hover:scale-105 transition">
+                    <div><img src="assets/images/tanuki3.png" alt="tanuki3"></div>
+                    <div class="py-4 px-6">
+                        <h3 class="text-2xl py-2">Окинава стандарт</h3>
+                        <p> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</p>
+                        <div class="py-4">
+                            <button class="bg-blue-400 py-2 px-4 text-white outline-none hover:bg-blue-600" type="button">В корзину <i class=" pl-2 fa-solid fa-cart-shopping"></i></button>
+                            <span class="font-bold text-xl pl-4">250 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg hover:scale-105 transition">
+                    <div><img src="assets/images/tanuki4.png" alt="tanuki4"></div>
+                    <div class="py-4 px-6">
+                        <h3 class="text-2xl py-2">Цезарь маки хl</h3>
+                        <p>Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</p>
+                        <div class="py-4">
+                            <button class="bg-blue-400 py-2 px-4 text-white outline-none hover:bg-blue-600" type="button">В корзину <i class=" pl-2 fa-solid fa-cart-shopping"></i></button>
+                            <span class="font-bold text-xl pl-4">250 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg hover:scale-105 transition">
+                    <div><img src="assets/images/tanuki5.png" alt="tanuki5"></div>
+                    <div class="py-4 px-6">
+                        <h3 class="text-2xl py-2">Ясай маки стандарт 185 г</h3>
+                        <p>Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</p>
+                        <div class="py-4">
+                            <button class="bg-blue-400 py-2 px-4 text-white outline-none hover:bg-blue-600" type="button">В корзину <i class=" pl-2 fa-solid fa-cart-shopping"></i></button>
+                            <span class="font-bold text-xl pl-4">250 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg hover:scale-105 transition">
+                    <div><img src="assets/images/tanuki6.png" alt="tanuki6"></div>
+                    <div class="py-4 px-6">
+                        <h3 class="text-2xl py-2">Ролл с креветкой стандарт</h3>
+                        <p>Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</p>
+                        <div class="py-4">
+                            <button class="bg-blue-400 py-2 px-4 text-white outline-none hover:bg-blue-600" type="button">В корзину <i class=" pl-2 fa-solid fa-cart-shopping"></i></button>
+                            <span class="font-bold text-xl pl-4">250 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container flex md:flex-row  flex-col items-center justify-between py-[60px]">
+        <div class="flex md:flex-row  flex-col items-center justify-center space-x-12">
+            <img class="md:pb-0 pb-6" src="assets/svg/footer__logo.svg" alt="">
+            <ul class="flex md:flex-row  flex-col md:text-start text-center space-x-8">
+                <a href="#!"><li class="hover:text-blue-500">Ресторанам </li></a>
+                <a href="#!"><li class="hover:text-blue-500">Курьерам</li></a>
+                <a href="#!"><li class="hover:text-blue-500">Пресс-центр</li></a>
+            </ul>
+        </div>
+        <div class="flex md:pt-0 pt-8 items-center justify-center space-x-8">
+            <img class="cursor-pointer hover:scale-125 hover:transition" src="assets/svg/instagram.svg" alt="instagram">
+            <img class="cursor-pointer hover:scale-125 hover:transition" src="assets/svg/facebook.svg" alt="facebook">
+            <img class="cursor-pointer hover:scale-125 hover:transition" src="assets/svg/vk.svg" alt="vk">
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
